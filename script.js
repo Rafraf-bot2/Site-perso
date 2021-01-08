@@ -26,4 +26,15 @@ $(document).ready(function(){
         once: true
     });
 
+
+
+        $('.caca').on('click', function(){
+            console.log("oeoeoe")
+            let copy = document.getElementById("discord")
+            copy.select();
+            copy.setSelectionRange(0, 99999)
+            document.execCommand("copy")
+            alert("Identifiant discord copié ! "+ copy.value)
+        });
+
 });
